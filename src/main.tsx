@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import Header from "./assets/components/header"
 import { WritePost } from './assets/pages/WritePost.tsx'
+import EditPlaceholder from './assets/components/EditDataModal.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>   
       <BrowserRouter>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route index element={ <App />} />
         <Route path="/Writepost" element={<WritePost />} />
+        <Route path="/EditPost" element={<EditPlaceholder/>} />
       </Routes>
    </BrowserRouter>
   </StrictMode>,
